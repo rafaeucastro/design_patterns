@@ -15,4 +15,22 @@ class CharacterDirector {
 
     return builder.getResult();
   }
+
+  Character createWarrior() {
+    return builder
+        .setAgility(8)
+        .setClass("Warrior")
+        .setInteligence(5)
+        .setStrength(10)
+        .getResult();
+  }
+
+  Character createSorcerer() {
+    return builder
+        .setAgility(9)
+        .setClass("Magician")
+        .setInteligence(10)
+        .setStrength(9)
+        .getResult();
+  }
 }

@@ -14,4 +14,7 @@ void main(List<String> args) {
 
   final character = director.createCharacter("Warrior", 2, 4, 5);
   character.display();
+
+  final sorcerer = director.createSorcerer();
+  sorcerer.display();
 }

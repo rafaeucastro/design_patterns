@@ -1,10 +1,10 @@
 import 'character.dart';
 
 abstract class CharacterBuilder {
-  void setClass(String className);
-  void setStrength(int strength);
-  void setAgility(int agility);
-  void setInteligence(int intelligence);
-  void zeroAgility();
+  CharacterBuilder setClass(String className);
+  CharacterBuilder setStrength(int strength);
+  CharacterBuilder setAgility(int agility);
+  CharacterBuilder setInteligence(int intelligence);
+  CharacterBuilder zeroAgility();
   Character getResult();
 }
