@@ -1,15 +1,15 @@
 import 'vehicle.dart';
 
 class Bus extends Vehicle {
-  int? doors;
+  int? seats;
 
-  Bus();
+  Bus({this.seats, super.brand, super.color, super.model});
 
   Bus.from(Bus bus) {
     super.brand = bus.brand;
     super.color = bus.color;
     super.model = bus.model;
-    this.doors = bus.doors;
+    this.seats = bus.seats;
   }
 
   @override

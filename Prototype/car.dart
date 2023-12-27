@@ -3,7 +3,7 @@ import 'vehicle.dart';
 class Car extends Vehicle {
   int? topSpeed;
 
-  Car();
+  Car({this.topSpeed, super.brand, super.color, super.model});
 
   Car.from(Car car) {
     super.brand = car.brand;

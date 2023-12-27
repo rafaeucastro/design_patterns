@@ -4,8 +4,11 @@ class Vehicle implements Prototype {
   String? brand;
   String? model;
   String? color;
-
-  Vehicle() {}
+  Vehicle({
+    this.brand,
+    this.model,
+    this.color,
+  }) {}
 
   Vehicle.from(Vehicle vehicle) {
     this.brand = vehicle.brand;
